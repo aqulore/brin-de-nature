@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brin de Nature - Fruits, Légumes & Plantes</title>
+    <meta name="description" content="Brin de Nature : fruits et légumes frais, plantes d'intérieur et d'extérieur. Produits locaux, bio et de saison livrés chez vous.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <svg class="nav__logo-icon" viewBox="0 0 40 40" width="40" height="40">
+                    <circle cx="20" cy="20" r="18" fill="#2D5A27"/>
+                    <path d="M20 8 C15 14, 10 18, 12 26 C14 32, 20 34, 20 34 C20 34, 26 32, 28 26 C30 18, 25 14, 20 8Z" fill="#4A9E3F" stroke="#2D5A27" stroke-width="0.5"/>
+                    <path d="M20 12 L20 30" stroke="#2D5A27" stroke-width="1.2" fill="none"/>
+                    <path d="M20 18 L16 15" stroke="#2D5A27" stroke-width="0.8" fill="none"/>
+                    <path d="M20 22 L24 19" stroke="#2D5A27" stroke-width="0.8" fill="none"/>
+                </svg>
+                <span>Brin de Nature</span>
+            </a>
+            <ul class="nav__menu" id="navMenu">
+                <li><a href="#accueil" class="nav__link">Accueil</a></li>
+                <li><a href="#valeurs" class="nav__link">Nos Valeurs</a></li>
+                <li><a href="#fruits-legumes" class="nav__link">Fruits & Légumes</a></li>
+                <li><a href="#plantes" class="nav__link">Plantes</a></li>
+                <li><a href="#produits" class="nav__link">Produits Phares</a></li>
+                <li><a href="#promotions" class="nav__link">Promotions</a></li>
+                <li><a href="#contact" class="nav__link nav__link--cta">Contact</a></li>
+            </ul>
+            <button class="nav__toggle" id="navToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="accueil">
+        <div class="hero__bg">
+            <div class="hero__pattern"></div>
+        </div>
+        <div class="hero__content container">
+            <div class="hero__text">
+                <span class="hero__badge">Produits frais & locaux</span>
+                <h1 class="hero__title">La nature <br><em>dans votre assiette</em></h1>
+                <p class="hero__description">
+                    Découvrez notre sélection de fruits, légumes et plantes cultivés avec passion.
+                    Du producteur à votre table, nous vous offrons le meilleur de la nature.
+                </p>
+                <div class="hero__actions">
+                    <a href="#produits" class="btn btn--primary">Découvrir nos produits</a>
+                    <a href="#valeurs" class="btn btn--outline">Nos engagements</a>
+                </div>
+                <div class="hero__stats">
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">150+</span>
+                        <span class="hero__stat-label">Variétés</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">100%</span>
+                        <span class="hero__stat-label">Local</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">2000+</span>
+                        <span class="hero__stat-label">Clients satisfaits</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__visual">
+                <div class="hero__image-wrapper">
+                    <svg class="hero__illustration" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Background circle -->
+                        <circle cx="250" cy="250" r="220" fill="#E8F5E2" opacity="0.6"/>
+                        <circle cx="250" cy="250" r="180" fill="#D4EDDA" opacity="0.4"/>
+                        <!-- Basket -->
+                        <ellipse cx="250" cy="340" rx="150" ry="30" fill="#8B6914"/>
+                        <path d="M100 340 Q100 260, 140 240 L360 240 Q400 260, 400 340 Z" fill="#A0782C" stroke="#8B6914" stroke-width="2"/>
+                        <path d="M120 340 Q120 270, 150 250 L350 250 Q380 270, 380 340 Z" fill="#C49A3C"/>
+                        <!-- Basket weave lines -->
+                        <path d="M140 270 L360 270" stroke="#A0782C" stroke-width="1.5" opacity="0.6"/>
+                        <path d="M130 290 L370 290" stroke="#A0782C" stroke-width="1.5" opacity="0.6"/>
+                        <path d="M120 310 L380 310" stroke="#A0782C" stroke-width="1.5" opacity="0.6"/>
+                        <path d="M115 330 L385 330" stroke="#A0782C" stroke-width="1.5" opacity="0.6"/>
+                        <!-- Tomato -->
+                        <circle cx="200" cy="220" r="45" fill="#E74C3C"/>
+                        <circle cx="200" cy="220" r="45" fill="url(#tomatoGrad)"/>
+                        <path d="M195 178 Q200 170, 210 175 L205 180 Q200 178, 197 180Z" fill="#27AE60"/>
+                        <!-- Apple -->
+                        <circle cx="310" cy="210" r="40" fill="#C0392B"/>
+                        <circle cx="310" cy="210" r="40" fill="url(#appleGrad)"/>
+                        <path d="M308 172 L310 160 Q318 165, 315 175" fill="#27AE60" stroke="#1E8449" stroke-width="0.5"/>
+                        <!-- Orange -->
+                        <circle cx="260" cy="240" r="38" fill="#F39C12"/>
+                        <circle cx="260" cy="240" r="38" fill="url(#orangeGrad)"/>
+                        <!-- Carrot -->
+                        <path d="M155 230 L140 300 L135 310 Q140 312, 145 310 L150 300 L175 235Z" fill="#E67E22" stroke="#D35400" stroke-width="1"/>
+                        <path d="M152 240 Q165 230, 178 235" fill="#27AE60"/>
+                        <path d="M155 238 Q162 225, 172 232" fill="#2ECC71"/>
+                        <!-- Lettuce/Leafy green -->
+                        <path d="M330 235 Q350 200, 370 220 Q390 195, 380 230 Q400 220, 385 250 Q370 240, 360 255 Q345 240, 335 250Z" fill="#27AE60"/>
+                        <path d="M335 240 Q350 210, 365 225 Q380 205, 375 235 Q390 225, 380 248" fill="#2ECC71" opacity="0.7"/>
+                        <!-- Lemon -->
+                        <ellipse cx="220" cy="260" rx="30" ry="25" fill="#F1C40F" transform="rotate(-15 220 260)"/>
+                        <!-- Leaf decoration top -->
+                        <path d="M250 100 Q230 130, 240 160 Q250 140, 260 160 Q270 130, 250 100Z" fill="#27AE60" opacity="0.3"/>
+                        <path d="M180 130 Q170 155, 185 175 Q190 158, 200 170 Q200 150, 180 130Z" fill="#2ECC71" opacity="0.25"/>
+                        <path d="M320 120 Q330 150, 320 170 Q315 153, 305 165 Q305 140, 320 120Z" fill="#27AE60" opacity="0.25"/>
+                        <!-- Gradients -->
+                        <defs>
+                            <radialGradient id="tomatoGrad" cx="40%" cy="35%">
+                                <stop offset="0%" stop-color="#FF6B6B" stop-opacity="0.6"/>
+                                <stop offset="100%" stop-color="#E74C3C" stop-opacity="0"/>
+                            </radialGradient>
+                            <radialGradient id="appleGrad" cx="35%" cy="30%">
+                                <stop offset="0%" stop-color="#E74C3C" stop-opacity="0.5"/>
+                                <stop offset="100%" stop-color="#C0392B" stop-opacity="0"/>
+                            </radialGradient>
+                            <radialGradient id="orangeGrad" cx="40%" cy="35%">
+                                <stop offset="0%" stop-color="#FABE4B" stop-opacity="0.6"/>
+                                <stop offset="100%" stop-color="#F39C12" stop-opacity="0"/>
+                            </radialGradient>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="hero__scroll">
+            <a href="#valeurs" aria-label="Défiler vers le bas">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 5v14M5 12l7 7 7-7"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values section" id="valeurs">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Nos engagements</span>
+                <h2 class="section__title">Des valeurs qui nous <em>animent</em></h2>
+                <p class="section__subtitle">
+                    Chez Brin de Nature, chaque produit raconte une histoire.
+                    Celle d'un engagement profond envers la qualité, la terre et nos clients.
+                </p>
+            </div>
+            <div class="values__grid">
+                <div class="value-card" data-animate>
+                    <div class="value-card__icon">
+                        <svg viewBox="0 0 64 64" width="64" height="64">
+                            <circle cx="32" cy="32" r="28" fill="#E8F5E2"/>
+                            <path d="M32 16 Q22 24, 24 36 Q26 44, 32 48 Q38 44, 40 36 Q42 24, 32 16Z" fill="#4A9E3F" stroke="#2D5A27" stroke-width="1"/>
+                            <path d="M32 20 L32 44" stroke="#2D5A27" stroke-width="1" fill="none"/>
+                            <path d="M32 28 L27 24" stroke="#2D5A27" stroke-width="0.8" fill="none"/>
+                            <path d="M32 34 L37 30" stroke="#2D5A27" stroke-width="0.8" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3 class="value-card__title">100% Biologique</h3>
+                    <p class="value-card__text">
+                        Tous nos produits sont issus de l'agriculture biologique certifiée.
+                        Sans pesticides, sans OGM, pour une alimentation saine et responsable.
+                    </p>
+                </div>
+                <div class="value-card" data-animate>
+                    <div class="value-card__icon">
+                        <svg viewBox="0 0 64 64" width="64" height="64">
+                            <circle cx="32" cy="32" r="28" fill="#FFF3E0"/>
+                            <circle cx="32" cy="28" r="10" fill="none" stroke="#E67E22" stroke-width="2"/>
+                            <path d="M22 38 Q22 32, 32 32 Q42 32, 42 38 L42 46 L22 46Z" fill="#E67E22" opacity="0.3" stroke="#E67E22" stroke-width="1.5"/>
+                            <circle cx="26" cy="28" r="1.5" fill="#E67E22"/>
+                            <circle cx="38" cy="28" r="1.5" fill="#E67E22"/>
+                            <path d="M28 42 L36 42" stroke="#E67E22" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="value-card__title">Producteurs Locaux</h3>
+                    <p class="value-card__text">
+                        Nous travaillons avec plus de 30 producteurs locaux dans un rayon de 50 km.
+                        Circuits courts pour une fraîcheur maximale.
+                    </p>
+                </div>
+                <div class="value-card" data-animate>
+                    <div class="value-card__icon">
+                        <svg viewBox="0 0 64 64" width="64" height="64">
+                            <circle cx="32" cy="32" r="28" fill="#E3F2FD"/>
+                            <circle cx="32" cy="26" r="12" fill="none" stroke="#2196F3" stroke-width="2"/>
+                            <path d="M32 14 L32 10" stroke="#2196F3" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M32 38 L32 50" stroke="#2196F3" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M20 26 L16 26" stroke="#2196F3" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M44 26 L48 26" stroke="#2196F3" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M28 42 L36 42" stroke="#2196F3" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M26 46 L38 46" stroke="#2196F3" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="value-card__title">Fraîcheur Garantie</h3>
+                    <p class="value-card__text">
+                        Récoltés le matin, livrés le jour même. Nos produits conservent
+                        toutes leurs saveurs et leurs qualités nutritionnelles.
+                    </p>
+                </div>
+                <div class="value-card" data-animate>
+                    <div class="value-card__icon">
+                        <svg viewBox="0 0 64 64" width="64" height="64">
+                            <circle cx="32" cy="32" r="28" fill="#F3E5F5"/>
+                            <path d="M20 44 L32 20 L44 44Z" fill="none" stroke="#9C27B0" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M24 38 L40 38" stroke="#9C27B0" stroke-width="1.5"/>
+                            <circle cx="32" cy="34" r="2" fill="#9C27B0"/>
+                            <path d="M32 28 L32 32" stroke="#9C27B0" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="value-card__title">Éco-responsable</h3>
+                    <p class="value-card__text">
+                        Emballages recyclables, livraison en véhicules électriques
+                        et zéro gaspillage. La planète est notre priorité.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fruits & Vegetables Section -->
+    <section class="produce section" id="fruits-legumes">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Fruits & Légumes</span>
+                <h2 class="section__title">Le meilleur de <em>nos terres</em></h2>
+                <p class="section__subtitle">
+                    Des fruits juteux et des légumes croquants, cultivés avec amour
+                    par nos producteurs partenaires. De saison, toujours.
+                </p>
+            </div>
+            <div class="produce__showcase">
+                <div class="produce__category produce__category--fruits" data-animate>
+                    <div class="produce__category-visual">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" rx="16" fill="#FFF8F0"/>
+                            <!-- Strawberry -->
+                            <path d="M100 180 Q85 140, 100 120 Q115 140, 100 180Z" fill="#E74C3C"/>
+                            <path d="M95 120 Q100 110, 105 120" fill="#27AE60"/>
+                            <circle cx="95" cy="145" r="1.5" fill="#C0392B"/>
+                            <circle cx="105" cy="150" r="1.5" fill="#C0392B"/>
+                            <circle cx="98" cy="160" r="1.5" fill="#C0392B"/>
+                            <circle cx="103" cy="138" r="1.5" fill="#C0392B"/>
+                            <!-- Grapes cluster -->
+                            <circle cx="180" cy="140" r="12" fill="#8E44AD"/>
+                            <circle cx="196" cy="145" r="12" fill="#7D3C98"/>
+                            <circle cx="188" cy="158" r="12" fill="#9B59B6"/>
+                            <circle cx="172" cy="155" r="12" fill="#8E44AD"/>
+                            <circle cx="180" cy="170" r="12" fill="#7D3C98"/>
+                            <path d="M185 128 L188 110 Q195 105, 200 110" stroke="#27AE60" stroke-width="2" fill="none"/>
+                            <!-- Banana -->
+                            <path d="M260 120 Q290 110, 310 130 Q320 150, 300 170 Q295 165, 305 145 Q310 130, 280 125 Q260 125, 260 120Z" fill="#F1C40F" stroke="#D4AC0D" stroke-width="1"/>
+                            <!-- Peach -->
+                            <circle cx="350" cy="160" r="30" fill="#F5B041"/>
+                            <circle cx="350" cy="160" r="30" fill="url(#peachGrad)"/>
+                            <path d="M348 131 L350 122 Q356 125, 354 132" fill="#27AE60"/>
+                            <defs>
+                                <radialGradient id="peachGrad" cx="60%" cy="40%">
+                                    <stop offset="0%" stop-color="#E74C3C" stop-opacity="0.4"/>
+                                    <stop offset="100%" stop-color="#F5B041" stop-opacity="0"/>
+                                </radialGradient>
+                            </defs>
+                            <!-- Label -->
+                            <text x="200" y="240" text-anchor="middle" font-family="Playfair Display, serif" font-size="22" fill="#2D5A27" font-weight="600">Fruits de Saison</text>
+                            <text x="200" y="265" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#666">Fraises, raisins, pêches, bananes...</text>
+                        </svg>
+                    </div>
+                    <div class="produce__category-info">
+                        <h3>Nos Fruits</h3>
+                        <p>Pommes croquantes, fraises parfumées, agrumes ensoleillés... Nos fruits sont cueillis à maturité pour vous garantir un goût incomparable.</p>
+                        <ul class="produce__list">
+                            <li>Fraises & fruits rouges</li>
+                            <li>Agrumes de Méditerranée</li>
+                            <li>Pommes & poires du verger</li>
+                            <li>Fruits exotiques équitables</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="produce__category produce__category--vegetables" data-animate>
+                    <div class="produce__category-info">
+                        <h3>Nos Légumes</h3>
+                        <p>Tomates gorgées de soleil, courgettes tendres, carottes sucrées... Des légumes qui ont du goût, cultivés en pleine terre.</p>
+                        <ul class="produce__list">
+                            <li>Tomates anciennes & bio</li>
+                            <li>Légumes racines & tubercules</li>
+                            <li>Salades & herbes aromatiques</li>
+                            <li>Courges & légumes d'hiver</li>
+                        </ul>
+                    </div>
+                    <div class="produce__category-visual">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" rx="16" fill="#F0FFF0"/>
+                            <!-- Tomato -->
+                            <circle cx="100" cy="140" r="35" fill="#E74C3C"/>
+                            <path d="M88 108 Q100 100, 112 108 L108 115 Q100 110, 92 115Z" fill="#27AE60"/>
+                            <!-- Carrot -->
+                            <path d="M190 110 L175 200 Q180 205, 185 200Z" fill="#E67E22"/>
+                            <path d="M185 110 Q192 100, 200 108" fill="#27AE60"/>
+                            <path d="M188 108 Q195 96, 196 106" fill="#2ECC71"/>
+                            <path d="M178 140 L186 135" stroke="#D35400" stroke-width="0.8" opacity="0.5"/>
+                            <path d="M177 160 L184 155" stroke="#D35400" stroke-width="0.8" opacity="0.5"/>
+                            <path d="M176 180 L182 175" stroke="#D35400" stroke-width="0.8" opacity="0.5"/>
+                            <!-- Broccoli -->
+                            <circle cx="280" cy="130" r="18" fill="#27AE60"/>
+                            <circle cx="298" cy="125" r="16" fill="#2ECC71"/>
+                            <circle cx="270" cy="120" r="14" fill="#229954"/>
+                            <circle cx="290" cy="115" r="15" fill="#27AE60"/>
+                            <rect x="282" y="145" width="8" height="30" rx="3" fill="#229954"/>
+                            <!-- Eggplant -->
+                            <ellipse cx="360" cy="150" rx="22" ry="45" fill="#6C3483" transform="rotate(15 360 150)"/>
+                            <path d="M352 108 Q360 100, 368 108 L365 115 Q360 112, 355 115Z" fill="#27AE60"/>
+                            <!-- Label -->
+                            <text x="200" y="240" text-anchor="middle" font-family="Playfair Display, serif" font-size="22" fill="#2D5A27" font-weight="600">Légumes du Potager</text>
+                            <text x="200" y="265" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#666">Tomates, carottes, brocolis, aubergines...</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plants Section -->
+    <section class="plants section" id="plantes">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Nos Plantes</span>
+                <h2 class="section__title">Verdissez votre <em>intérieur</em></h2>
+                <p class="section__subtitle">
+                    Plantes d'intérieur, d'extérieur, aromatiques ou fleuries :
+                    trouvez la compagne verte idéale pour votre espace de vie.
+                </p>
+            </div>
+            <div class="plants__grid">
+                <div class="plant-card" data-animate>
+                    <div class="plant-card__image">
+                        <svg viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="300" height="250" rx="12" fill="#F5F9F5"/>
+                            <!-- Pot -->
+                            <path d="M110 180 L100 230 L200 230 L190 180Z" fill="#D35400"/>
+                            <rect x="105" y="172" width="90" height="14" rx="4" fill="#E67E22"/>
+                            <!-- Monstera-style plant -->
+                            <path d="M150 170 Q120 130, 110 100 Q115 90, 130 95 Q125 110, 135 130 Q140 110, 148 100 Q152 110, 150 130 Q155 120, 160 105 Q170 100, 168 115 Q160 135, 150 170Z" fill="#27AE60"/>
+                            <path d="M150 170 Q170 120, 185 95 Q195 90, 190 105 Q180 120, 175 140 Q180 130, 190 120 Q195 125, 185 145 Q175 155, 150 170Z" fill="#2ECC71"/>
+                            <path d="M150 170 Q135 140, 120 120" stroke="#1E8449" stroke-width="1" fill="none"/>
+                            <path d="M150 170 Q165 130, 180 110" stroke="#229954" stroke-width="1" fill="none"/>
+                        </svg>
+                    </div>
+                    <div class="plant-card__info">
+                        <span class="plant-card__badge">Populaire</span>
+                        <h3>Plantes d'intérieur</h3>
+                        <p>Monstera, Ficus, Pothos... Des plantes qui purifient l'air et embellissent votre intérieur.</p>
+                    </div>
+                </div>
+                <div class="plant-card" data-animate>
+                    <div class="plant-card__image">
+                        <svg viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="300" height="250" rx="12" fill="#FFF9F5"/>
+                            <!-- Pot -->
+                            <path d="M110 180 L100 230 L200 230 L190 180Z" fill="#8B6914"/>
+                            <rect x="105" y="172" width="90" height="14" rx="4" fill="#A0782C"/>
+                            <!-- Flowering plant -->
+                            <path d="M150 170 L150 100" stroke="#27AE60" stroke-width="3"/>
+                            <path d="M150 140 Q130 130, 120 110" stroke="#27AE60" stroke-width="2" fill="none"/>
+                            <path d="M150 130 Q170 120, 180 105" stroke="#27AE60" stroke-width="2" fill="none"/>
+                            <!-- Flowers -->
+                            <circle cx="150" cy="90" r="5" fill="#F1C40F"/>
+                            <circle cx="150" cy="80" r="8" fill="#E74C3C" opacity="0.8"/>
+                            <circle cx="142" cy="86" r="8" fill="#FF6B6B" opacity="0.8"/>
+                            <circle cx="158" cy="86" r="8" fill="#C0392B" opacity="0.8"/>
+                            <circle cx="145" cy="94" r="8" fill="#E74C3C" opacity="0.8"/>
+                            <circle cx="155" cy="94" r="8" fill="#FF6B6B" opacity="0.8"/>
+                            <circle cx="150" cy="88" r="5" fill="#F1C40F"/>
+                            <!-- Side flower -->
+                            <circle cx="120" cy="105" r="4" fill="#F1C40F"/>
+                            <circle cx="115" cy="100" r="6" fill="#FF69B4" opacity="0.8"/>
+                            <circle cx="125" cy="100" r="6" fill="#FF1493" opacity="0.8"/>
+                            <circle cx="118" cy="107" r="6" fill="#FF69B4" opacity="0.8"/>
+                            <circle cx="122" cy="107" r="6" fill="#FF1493" opacity="0.8"/>
+                            <circle cx="120" cy="103" r="4" fill="#F1C40F"/>
+                            <!-- Another side flower -->
+                            <circle cx="180" cy="100" r="4" fill="#F1C40F"/>
+                            <circle cx="175" cy="95" r="6" fill="#9B59B6" opacity="0.8"/>
+                            <circle cx="185" cy="95" r="6" fill="#8E44AD" opacity="0.8"/>
+                            <circle cx="178" cy="103" r="6" fill="#9B59B6" opacity="0.8"/>
+                            <circle cx="183" cy="103" r="6" fill="#8E44AD" opacity="0.8"/>
+                            <circle cx="180" cy="98" r="4" fill="#F1C40F"/>
+                            <!-- Leaves -->
+                            <path d="M140 150 Q125 145, 118 155 Q130 152, 140 150Z" fill="#27AE60"/>
+                            <path d="M160 155 Q175 150, 182 160 Q170 157, 160 155Z" fill="#2ECC71"/>
+                        </svg>
+                    </div>
+                    <div class="plant-card__info">
+                        <span class="plant-card__badge plant-card__badge--pink">Nouveauté</span>
+                        <h3>Plantes fleuries</h3>
+                        <p>Orchidées, rosiers, hortensias... Apportez couleur et élégance à votre jardin ou balcon.</p>
+                    </div>
+                </div>
+                <div class="plant-card" data-animate>
+                    <div class="plant-card__image">
+                        <svg viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="300" height="250" rx="12" fill="#F5FFF5"/>
+                            <!-- Pot -->
+                            <path d="M110 180 L100 230 L200 230 L190 180Z" fill="#5D6D7E"/>
+                            <rect x="105" y="172" width="90" height="14" rx="4" fill="#7F8C8D"/>
+                            <!-- Herbs -->
+                            <path d="M130 170 Q125 140, 120 120 Q125 115, 132 120 Q130 135, 130 170Z" fill="#27AE60"/>
+                            <path d="M140 170 Q138 135, 135 105 Q140 100, 145 105 Q143 135, 140 170Z" fill="#2ECC71"/>
+                            <path d="M150 170 Q150 130, 152 95 Q157 90, 158 95 Q155 130, 155 170Z" fill="#27AE60"/>
+                            <path d="M160 170 Q162 140, 168 115 Q173 112, 172 118 Q165 140, 162 170Z" fill="#229954"/>
+                            <path d="M170 170 Q175 145, 180 130 Q184 128, 183 133 Q178 148, 172 170Z" fill="#2ECC71"/>
+                            <!-- Small leaves on herbs -->
+                            <path d="M135 120 Q128 115, 125 110 Q130 108, 135 120Z" fill="#229954"/>
+                            <path d="M145 108 Q150 100, 155 105 Q150 108, 145 108Z" fill="#27AE60"/>
+                            <path d="M168 118 Q175 110, 178 115 Q173 118, 168 118Z" fill="#229954"/>
+                        </svg>
+                    </div>
+                    <div class="plant-card__info">
+                        <span class="plant-card__badge plant-card__badge--herb">Aromatique</span>
+                        <h3>Herbes aromatiques</h3>
+                        <p>Basilic, menthe, romarin, thym... Cultivez vos propres herbes pour une cuisine pleine de saveurs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured section" id="produits">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Sélection</span>
+                <h2 class="section__title">Nos produits <em>phares</em></h2>
+                <p class="section__subtitle">
+                    Les favoris de nos clients, sélectionnés pour leur qualité exceptionnelle
+                    et leur goût remarquable.
+                </p>
+            </div>
+            <div class="featured__grid">
+                <article class="product-card" data-animate>
+                    <div class="product-card__image">
+                        <svg viewBox="0 0 280 200" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="280" height="200" fill="#FFF5F5" rx="8"/>
+                            <circle cx="140" cy="95" r="55" fill="#E74C3C"/>
+                            <circle cx="140" cy="95" r="55" fill="url(#featTomatoGrad)"/>
+                            <path d="M130 42 Q140 32, 150 42 L148 50 Q140 46, 132 50Z" fill="#27AE60"/>
+                            <defs>
+                                <radialGradient id="featTomatoGrad" cx="35%" cy="30%">
+                                    <stop offset="0%" stop-color="#FF6B6B" stop-opacity="0.5"/>
+                                    <stop offset="100%" stop-color="#E74C3C" stop-opacity="0"/>
+                                </radialGradient>
+                            </defs>
+                        </svg>
+                        <span class="product-card__tag">Bio</span>
+                    </div>
+                    <div class="product-card__info">
+                        <h3>Tomates Coeur de Boeuf</h3>
+                        <p class="product-card__origin">Producteur : Ferme du Soleil</p>
+                        <div class="product-card__footer">
+                            <span class="product-card__price">4,90 &euro; <small>/kg</small></span>
+                            <button class="product-card__btn" aria-label="Ajouter au panier">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 5v14M5 12h14"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card" data-animate>
+                    <div class="product-card__image">
+                        <svg viewBox="0 0 280 200" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="280" height="200" fill="#FFF8F0" rx="8"/>
+                            <circle cx="140" cy="100" r="50" fill="#F39C12"/>
+                            <circle cx="140" cy="100" r="50" fill="url(#featOrangeGrad2)"/>
+                            <circle cx="140" cy="100" r="42" fill="none" stroke="#E67E22" stroke-width="0.5" opacity="0.3"/>
+                            <circle cx="140" cy="53" r="5" fill="#27AE60"/>
+                            <defs>
+                                <radialGradient id="featOrangeGrad2" cx="40%" cy="30%">
+                                    <stop offset="0%" stop-color="#FABE4B" stop-opacity="0.5"/>
+                                    <stop offset="100%" stop-color="#F39C12" stop-opacity="0"/>
+                                </radialGradient>
+                            </defs>
+                        </svg>
+                        <span class="product-card__tag product-card__tag--season">Saison</span>
+                    </div>
+                    <div class="product-card__info">
+                        <h3>Oranges de Valence</h3>
+                        <p class="product-card__origin">Producteur : Les Vergers d'Or</p>
+                        <div class="product-card__footer">
+                            <span class="product-card__price">3,50 &euro; <small>/kg</small></span>
+                            <button class="product-card__btn" aria-label="Ajouter au panier">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 5v14M5 12h14"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card" data-animate>
+                    <div class="product-card__image">
+                        <svg viewBox="0 0 280 200" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="280" height="200" fill="#F0FFF0" rx="8"/>
+                            <!-- Basil in pot -->
+                            <path d="M115 150 L108 180 L172 180 L165 150Z" fill="#8B6914"/>
+                            <rect x="110" y="144" width="60" height="10" rx="3" fill="#A0782C"/>
+                            <path d="M130 142 Q125 110, 118 95 Q125 88, 132 95 Q128 115, 130 142Z" fill="#27AE60"/>
+                            <path d="M140 142 Q138 105, 135 80 Q142 74, 148 82 Q144 108, 142 142Z" fill="#2ECC71"/>
+                            <path d="M150 142 Q155 110, 162 92 Q168 88, 166 96 Q158 115, 152 142Z" fill="#229954"/>
+                            <path d="M138 142 Q132 120, 125 105 Q130 100, 135 108 Q135 125, 138 142Z" fill="#27AE60"/>
+                            <path d="M148 142 Q152 115, 158 100 Q163 97, 160 105 Q155 120, 150 142Z" fill="#2ECC71"/>
+                        </svg>
+                        <span class="product-card__tag product-card__tag--plant">Plante</span>
+                    </div>
+                    <div class="product-card__info">
+                        <h3>Basilic Grand Vert</h3>
+                        <p class="product-card__origin">Producteur : Herbes & Saveurs</p>
+                        <div class="product-card__footer">
+                            <span class="product-card__price">3,20 &euro; <small>/pot</small></span>
+                            <button class="product-card__btn" aria-label="Ajouter au panier">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 5v14M5 12h14"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card" data-animate>
+                    <div class="product-card__image">
+                        <svg viewBox="0 0 280 200" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="280" height="200" fill="#FFF5F5" rx="8"/>
+                            <!-- Strawberries -->
+                            <path d="M110 130 Q95 90, 110 70 Q125 90, 110 130Z" fill="#E74C3C"/>
+                            <path d="M105 72 Q110 62, 115 72" fill="#27AE60"/>
+                            <circle cx="106" cy="90" r="1.5" fill="#C0392B"/>
+                            <circle cx="114" cy="95" r="1.5" fill="#C0392B"/>
+                            <circle cx="108" cy="108" r="1.5" fill="#C0392B"/>
+                            <path d="M145 140 Q128 95, 145 72 Q162 95, 145 140Z" fill="#C0392B"/>
+                            <path d="M140 74 Q145 62, 150 74" fill="#27AE60"/>
+                            <circle cx="141" cy="95" r="1.8" fill="#922B21"/>
+                            <circle cx="150" cy="100" r="1.8" fill="#922B21"/>
+                            <circle cx="143" cy="115" r="1.8" fill="#922B21"/>
+                            <path d="M175 125 Q163 90, 175 75 Q187 90, 175 125Z" fill="#E74C3C"/>
+                            <path d="M171 77 Q175 68, 179 77" fill="#27AE60"/>
+                            <circle cx="172" cy="92" r="1.5" fill="#C0392B"/>
+                            <circle cx="178" cy="98" r="1.5" fill="#C0392B"/>
+                            <circle cx="174" cy="108" r="1.5" fill="#C0392B"/>
+                        </svg>
+                        <span class="product-card__tag">Bio</span>
+                    </div>
+                    <div class="product-card__info">
+                        <h3>Fraises Gariguette</h3>
+                        <p class="product-card__origin">Producteur : Jardins du Midi</p>
+                        <div class="product-card__footer">
+                            <span class="product-card__price">6,90 &euro; <small>/barq.</small></span>
+                            <button class="product-card__btn" aria-label="Ajouter au panier">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 5v14M5 12h14"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card" data-animate>
+                    <div class="product-card__image">
+                        <svg viewBox="0 0 280 200" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="280" height="200" fill="#F5FFF5" rx="8"/>
+                            <!-- Monstera in pot -->
+                            <path d="M115 155 L108 185 L172 185 L165 155Z" fill="#5D6D7E"/>
+                            <rect x="110" y="148" width="60" height="10" rx="3" fill="#7F8C8D"/>
+                            <path d="M140 145 Q115 110, 105 80 Q115 70, 125 85 Q120 100, 128 115 Q130 100, 135 90 Q142 85, 140 95 Q138 110, 140 145Z" fill="#27AE60"/>
+                            <path d="M140 145 Q160 105, 175 75 Q185 72, 180 85 Q170 100, 162 120 Q168 108, 175 100 Q178 105, 170 120 Q158 135, 140 145Z" fill="#2ECC71"/>
+                            <path d="M140 145 Q130 125, 120 105" stroke="#1E8449" stroke-width="1" fill="none"/>
+                            <path d="M140 145 Q155 115, 170 95" stroke="#229954" stroke-width="1" fill="none"/>
+                        </svg>
+                        <span class="product-card__tag product-card__tag--plant">Plante</span>
+                    </div>
+                    <div class="product-card__info">
+                        <h3>Monstera Deliciosa</h3>
+                        <p class="product-card__origin">Pépinière : Vert Émeraude</p>
+                        <div class="product-card__footer">
+                            <span class="product-card__price">24,90 &euro;</span>
+                            <button class="product-card__btn" aria-label="Ajouter au panier">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 5v14M5 12h14"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card" data-animate>
+                    <div class="product-card__image">
+                        <svg viewBox="0 0 280 200" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="280" height="200" fill="#F5FFF0" rx="8"/>
+                            <!-- Avocados -->
+                            <ellipse cx="120" cy="105" rx="35" ry="45" fill="#27AE60"/>
+                            <ellipse cx="120" cy="105" rx="35" ry="45" fill="url(#avoGrad)"/>
+                            <ellipse cx="120" cy="115" rx="18" ry="22" fill="#F5DEB3"/>
+                            <circle cx="120" cy="115" r="12" fill="#8B6914"/>
+                            <ellipse cx="165" cy="100" rx="32" ry="42" fill="#229954" transform="rotate(10 165 100)"/>
+                            <defs>
+                                <radialGradient id="avoGrad" cx="30%" cy="30%">
+                                    <stop offset="0%" stop-color="#2ECC71" stop-opacity="0.4"/>
+                                    <stop offset="100%" stop-color="#27AE60" stop-opacity="0"/>
+                                </radialGradient>
+                            </defs>
+                        </svg>
+                        <span class="product-card__tag">Bio</span>
+                    </div>
+                    <div class="product-card__info">
+                        <h3>Avocat Hass Bio</h3>
+                        <p class="product-card__origin">Producteur : Terres du Sud</p>
+                        <div class="product-card__footer">
+                            <span class="product-card__price">2,50 &euro; <small>/pièce</small></span>
+                            <button class="product-card__btn" aria-label="Ajouter au panier">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 5v14M5 12h14"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promotions Section -->
+    <section class="promos section" id="promotions">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Offres spéciales</span>
+                <h2 class="section__title">Promotions de la <em>semaine</em></h2>
+                <p class="section__subtitle">
+                    Profitez de nos offres exceptionnelles sur une sélection de produits frais.
+                    Renouvelées chaque semaine !
+                </p>
+            </div>
+            <div class="promos__grid">
+                <div class="promo-card promo-card--large" data-animate>
+                    <div class="promo-card__content">
+                        <span class="promo-card__discount">-30%</span>
+                        <h3 class="promo-card__title">Panier Découverte</h3>
+                        <p class="promo-card__text">Un assortiment de 5 kg de fruits et légumes de saison. Idéal pour découvrir nos producteurs !</p>
+                        <div class="promo-card__pricing">
+                            <span class="promo-card__old-price">28,00 &euro;</span>
+                            <span class="promo-card__new-price">19,60 &euro;</span>
+                        </div>
+                        <a href="#contact" class="btn btn--primary">En profiter</a>
+                    </div>
+                    <div class="promo-card__visual">
+                        <svg viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="150" cy="125" r="100" fill="#fff" opacity="0.15"/>
+                            <!-- Basket with produce -->
+                            <ellipse cx="150" cy="190" rx="80" ry="15" fill="#8B6914" opacity="0.8"/>
+                            <path d="M70 190 Q70 150, 90 140 L210 140 Q230 150, 230 190Z" fill="#C49A3C"/>
+                            <path d="M80 190 Q80 155, 95 148 L205 148 Q220 155, 220 190Z" fill="#D4AA4C"/>
+                            <circle cx="130" cy="130" r="22" fill="#E74C3C"/>
+                            <circle cx="170" cy="125" r="20" fill="#F39C12"/>
+                            <path d="M145 128 Q140 100, 148 90 Q152 100, 150 128Z" fill="#27AE60"/>
+                            <circle cx="150" cy="140" r="18" fill="#F1C40F"/>
+                            <path d="M110 135 Q105 110, 115 105 Q120 115, 112 135Z" fill="#27AE60"/>
+                            <path d="M190 130 Q195 105, 200 120 Q195 130, 190 130Z" fill="#2ECC71"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="promo-card" data-animate>
+                    <div class="promo-card__content">
+                        <span class="promo-card__discount">-20%</span>
+                        <h3 class="promo-card__title">Trio d'Herbes</h3>
+                        <p class="promo-card__text">Basilic, menthe et ciboulette en pot. Prêts à planter !</p>
+                        <div class="promo-card__pricing">
+                            <span class="promo-card__old-price">12,00 &euro;</span>
+                            <span class="promo-card__new-price">9,60 &euro;</span>
+                        </div>
+                        <a href="#contact" class="btn btn--small">En profiter</a>
+                    </div>
+                </div>
+                <div class="promo-card" data-animate>
+                    <div class="promo-card__content">
+                        <span class="promo-card__discount">-25%</span>
+                        <h3 class="promo-card__title">Agrumes Bio</h3>
+                        <p class="promo-card__text">Caisse de 3 kg d'agrumes variés : oranges, citrons et clémentines.</p>
+                        <div class="promo-card__pricing">
+                            <span class="promo-card__old-price">15,00 &euro;</span>
+                            <span class="promo-card__new-price">11,25 &euro;</span>
+                        </div>
+                        <a href="#contact" class="btn btn--small">En profiter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials section">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Avis clients</span>
+                <h2 class="section__title">Ce qu'en disent <em>nos clients</em></h2>
+            </div>
+            <div class="testimonials__grid">
+                <div class="testimonial-card" data-animate>
+                    <div class="testimonial-card__stars">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#F39C12"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#F39C12"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#F39C12"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#F39C12"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#F39C12"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <p class="testimonial-card__text">"Des produits d'une fraîcheur exceptionnelle ! Les tomates ont un goût que j'avais oublié depuis mon enfance. Je recommande vivement."</p>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">MC</div>
+                        <div>
+                            <strong>Marie C.</strong>
+                            <span>Cliente depuis 2 ans</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-animate>
+                    <div class="testimonial-card__stars">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#F39C12"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#F39C12"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#F39C12"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#F39C12"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#F39C12"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <p class="testimonial-card__text">"Le panier découverte est une merveille. Chaque semaine, c'est la surprise ! Les plantes aromatiques sont magnifiques et très parfumées."</p>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">PD</div>
+                        <div>
+                            <strong>Pierre D.</strong>
+                            <span>Client depuis 1 an</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-animate>
+                    <div class="testimonial-card__stars">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#F39C12"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#F39C12"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#F39C12"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#F39C12"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#F39C12"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <p class="testimonial-card__text">"J'ai acheté un Monstera et un Ficus chez Brin de Nature. Ils sont magnifiques et en pleine santé. Le service client est au top !"</p>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">SL</div>
+                        <div>
+                            <strong>Sophie L.</strong>
+                            <span>Cliente depuis 6 mois</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="contact__wrapper">
+                <div class="contact__info">
+                    <span class="section__tag">Contact</span>
+                    <h2 class="section__title">Parlons de vos <em>envies</em></h2>
+                    <p>
+                        Une question, une commande spéciale ou simplement envie de discuter ?
+                        Nous sommes là pour vous. Remplissez le formulaire ou contactez-nous directement.
+                    </p>
+                    <div class="contact__details">
+                        <div class="contact__detail">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D5A27" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <div>
+                                <strong>Adresse</strong>
+                                <span>12 rue des Jardins, 31000 Toulouse</span>
+                            </div>
+                        </div>
+                        <div class="contact__detail">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D5A27" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <div>
+                                <strong>Téléphone</strong>
+                                <span>05 61 23 45 67</span>
+                            </div>
+                        </div>
+                        <div class="contact__detail">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D5A27" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <div>
+                                <strong>Email</strong>
+                                <span>contact@brindenature.fr</span>
+                            </div>
+                        </div>
+                        <div class="contact__detail">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D5A27" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                            <div>
+                                <strong>Horaires</strong>
+                                <span>Mar - Sam : 8h - 19h | Dim : 8h - 13h</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact__form" id="contactForm">
+                    <div class="form__group">
+                        <label for="name">Nom complet</label>
+                        <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="email">Adresse email</label>
+                        <input type="email" id="email" name="email" placeholder="votre@email.fr" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="phone">Téléphone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="06 12 34 56 78">
+                    </div>
+                    <div class="form__group">
+                        <label for="subject">Sujet</label>
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected>Choisir un sujet</option>
+                            <option value="commande">Passer une commande</option>
+                            <option value="info">Demande d'information</option>
+                            <option value="reclamation">Réclamation</option>
+                            <option value="partenariat">Partenariat</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+                    <div class="form__group form__group--full">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full">Envoyer le message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="#" class="nav__logo">
+                        <svg class="nav__logo-icon" viewBox="0 0 40 40" width="40" height="40">
+                            <circle cx="20" cy="20" r="18" fill="#4A9E3F"/>
+                            <path d="M20 8 C15 14, 10 18, 12 26 C14 32, 20 34, 20 34 C20 34, 26 32, 28 26 C30 18, 25 14, 20 8Z" fill="#E8F5E2" stroke="#4A9E3F" stroke-width="0.5"/>
+                            <path d="M20 12 L20 30" stroke="#4A9E3F" stroke-width="1.2" fill="none"/>
+                            <path d="M20 18 L16 15" stroke="#4A9E3F" stroke-width="0.8" fill="none"/>
+                            <path d="M20 22 L24 19" stroke="#4A9E3F" stroke-width="0.8" fill="none"/>
+                        </svg>
+                        <span>Brin de Nature</span>
+                    </a>
+                    <p>Votre partenaire pour une alimentation saine et un cadre de vie verdoyant. Depuis 2018, nous mettons la nature au coeur de votre quotidien.</p>
+                </div>
+                <div class="footer__links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#valeurs">Nos valeurs</a></li>
+                        <li><a href="#fruits-legumes">Fruits & Légumes</a></li>
+                        <li><a href="#plantes">Plantes</a></li>
+                        <li><a href="#produits">Produits phares</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <h4>Informations</h4>
+                    <ul>
+                        <li><a href="#">Livraison</a></li>
+                        <li><a href="#">Nos producteurs</a></li>
+                        <li><a href="#">Blog & Recettes</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                    </ul>
+                </div>
+                <div class="footer__newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Recevez nos offres et nouveautés chaque semaine.</p>
+                    <form class="footer__newsletter-form">
+                        <input type="email" placeholder="votre@email.fr" aria-label="Email pour la newsletter">
+                        <button type="submit" aria-label="S'inscrire">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 Brin de Nature. Tous droits réservés.</p>
+                <div class="footer__social">
+                    <a href="#" aria-label="Facebook">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
