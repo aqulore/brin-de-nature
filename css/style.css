@@ -551,18 +551,19 @@ button {
     border-color: var(--green-200);
 }
 
+.produce__category-visual {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
 .produce__category-visual svg,
 .produce__category-visual img {
     width: 100%;
     height: 100%;
     display: block;
     object-fit: cover;
-}
-
-.produce__category-visual {
-    aspect-ratio: 4 / 3;
-    overflow: hidden;
-    border-radius: 16px;
 }
 
 .produce__category-info {
@@ -635,6 +636,12 @@ button {
     border-color: var(--green-200);
 }
 
+.plant-card__image {
+    width: 100%;
+    aspect-ratio: 6 / 5;
+    overflow: hidden;
+}
+
 .plant-card__image svg,
 .plant-card__image img {
     width: 100%;
@@ -642,11 +649,6 @@ button {
     display: block;
     object-fit: cover;
     transition: transform var(--transition-slow);
-}
-
-.plant-card__image {
-    aspect-ratio: 6 / 5;
-    overflow: hidden;
 }
 
 .plant-card:hover .plant-card__image img {
@@ -725,6 +727,8 @@ button {
 .product-card__image {
     position: relative;
     overflow: hidden;
+    width: 100%;
+    aspect-ratio: 14 / 10;
 }
 
 .product-card__image svg,
@@ -734,10 +738,6 @@ button {
     display: block;
     object-fit: cover;
     transition: transform var(--transition-slow);
-}
-
-.product-card__image {
-    aspect-ratio: 14 / 10;
 }
 
 .product-card:hover .product-card__image svg,
